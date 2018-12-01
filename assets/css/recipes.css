@@ -1,0 +1,28 @@
+.container {
+    width: 80%;
+    margin: 70px auto 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.container article {
+    width: 23%;
+    margin-top: 3%;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article img {
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+article h2 {
+    font-size: 1.5em;
+    color: black;
+}

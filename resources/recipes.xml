@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recipes>
+    <recipe id='1'>
+        <title>Pancakes</title>
+        <image>assets/images/pancakes.jpg</image>
+        <instructions>
+            <instruction>Put 100g plain flour and a pinch of salt into a large mixing bowl.</instruction>
+            <instruction>Make a well in the centre and crack 2 eggs into the middle.</instruction>
+            <instruction>Pour in about 50ml from the 300ml of semi-skimmed milk and 1 tbsp sunflower oil then start whisking from the centre, gradually drawing the flour into the eggs, milk and oil. Once all the flour is incorporated, beat until you have a smooth, thick paste. Add a little more milk if it is too stiff to beat.</instruction>
+            <instruction>Add a good splash of milk and whisk to loosen the thick batter. While still whisking, pour in a steady stream of the remaining milk. Continue pouring and whisking until you have a batter that is the consistency of slightly thick single cream.</instruction>
+            <instruction>Heat the pan over a moderate heat, then wipe it with oiled kitchen paper.</instruction>
+            <instruction>Ladle some batter into the pan, tilting the pan to move the mixture around for a thin and even layer. Quickly pour any excess batter into the mixing bowl, return the pan to the heat.</instruction>
+            <instruction>Leave to cook, undisturbed, for about 30 secs. If the pan is the right temperature, the pancake should turn golden underneath after about 30 secs and will be ready to turn.</instruction>
+            <instruction>Hold the pan handle, ease a palette knife under the pancake, then quickly lift and flip it over. Make sure the pancake is lying flat against the base of the pan with no folds, then cook for another 30 secs before turning out onto a warm plate.</instruction>
+            <instruction>Continue with the rest of the batter, serving them as you cook or stack onto a plate. You can freeze the pancakes for 1 month, wrapped in cling film or make them up to a day ahead.</instruction>
+        </instructions>
+        <ingredients>
+            <ingredient>100g plain flour</ingredient>
+            <ingredient>2 eggs</ingredient>
+            <ingredient>300ml semi-skimmed milk</ingredient>
+            <ingredient>1 tbsp sunflower oil or vegetable, plus extra for frying</ingredient>
+            <ingredient>pinch salt</ingredient>
+        </ingredients>
+    </recipe>
+    <recipe id='2'>
+        <title>Meatballs</title>
+        <image>assets/images/meatballs.jpg</image>
+        <instructions>
+            <instruction>Heat oven to 400°F. Line 13x9-inch pan with foil; spray with cooking spray.</instruction>
+            <instruction>In large bowl, mix all ingredients. Shape mixture into 24 (1 1/2-inch) meatballs. Place 1 inch apart in pan.</instruction>
+            <instruction>Bake uncovered 18 to 22 minutes or until temperature reaches 160°F and no longer pink in center.</instruction>
+        </instructions>
+        <ingredients>
+            <ingredient>1 lb lean (at least 80%) ground beef</ingredient>
+            <ingredient>1/2 cup progresso Italian-style bread crumbs</ingredient>
+            <ingredient>1/4 cup milk</ingredient>
+            <ingredient>1/2 teaspoon salt</ingredient>
+            <ingredient>1/2 teaspoon Worchestershire sauce</ingredient>
+            <ingredient>1/4 teaspoon pepper</ingredient>
+            <ingredient>1 small onion, finaly chopped (1/4 cup)</ingredient>
+            <ingredient>1 egg</ingredient>
+        </ingredients>
+    </recipe>
+</recipes>

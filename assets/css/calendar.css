@@ -1,0 +1,42 @@
+.container {
+    margin: 70px auto 0 auto;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.weekday {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+}
+
+.day {
+    max-height: 100%;
+    border: 1px solid #e1e1e1;
+    text-align: left;
+}
+
+.calendar img {
+    width: 70%;
+    max-height: 70%;
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.next-month {
+    color: #e1e1e1;
+}
