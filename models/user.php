@@ -47,16 +47,12 @@ class UserModel extends Model{
 
     public function login () {
 
-        $post = filter_input_array(INPUT_POST, FILTER_SANITIZE_STRING);
-
-        if(isset($_POST['login-submit'])){
-
-            $username = $post['username'];
-            $password = $post['password'];
+            $username = $_POST['username'];
+            $password = $_POST['password'];
+            $error = '';
 
             if (empty($username) || empty($password)) {
-                header("Location: ".ROOT_URL."?error=emptyfields");
-                exit();
+                $error = 'FILL IN ALL FIELDS';
             } else {
                 $this->query('SELECT * FROM users WHERE username = :username');
                 $this->bind(':username', $username);
@@ -66,20 +62,25 @@ class UserModel extends Model{
                     $passwordCheck = password_verify($password, $row['password']);
                     
                     if($passwordCheck == false){
-                        header("Location: ".ROOT_URL."?error=wrongpwd");
-                        exit();
+                        $error = 'WRONG PASSWORD';
                     } else if ($passwordCheck == true){
-                        session_start();
                         $_SESSION['userId'] = $row['id'];
                         $_SESSION['username'] = $row['username'];
-                        header("Location: ".ROOT_URL);
-                        exit();
                     }
                 } else {
-                    header("Location: ".ROOT_URL."?error=nouser");
-                    exit();
+                    $error = 'NO USER';
                 }
-            }                    
-        }
+            }    
+        $data = array(
+            'error' => $error
+        );
+
+        echo json_encode($data);
+    }
+
+    public function logout () {
+        session_start();
+        session_unset();
+        session_destroy();
     }
 }

@@ -7,5 +7,5 @@ define("DB_PASS", "");
 define("DB_NAME", "loginsystem");
 
 // Define URL
-define("ROOT_PATH", "/tastyoop/");
-define("ROOT_URL", "http://localhost/tastyoop/");
+define("ROOT_PATH", "/tastyajax/");
+define("ROOT_URL", "http://localhost/tastyajax/");

@@ -1,5 +1,4 @@
 <?php
-    session_start();
     $activePage = $_GET['controller'];
 ?>
 
@@ -14,9 +13,18 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="<?php echo ROOT_PATH; ?>assets/css/header.css" />
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous">
+    </script>
+    <script src="<?php echo ROOT_PATH; ?>assets/js/loginScript.js"></script>
     <?php
         if(isset($css)){
             echo $css;
+        }
+        if(isset($js)){
+            echo $js;
         }
     ?>
 </head>
@@ -36,15 +44,14 @@
             
             <div class="login">
                 <?php if (!isset($_SESSION['userId'])) : ?>
-                        <form class='login-form' action='<?php echo ROOT_URL; ?>users/login' method='post'>
-                                <input type='text' name='username' placeholder='Username...'>
-                                <input type='password' name='password' placeholder='Password...'>
-                                <button class='nav-button' type='submit' name='login-submit'>Log in</button>
-                            </form>
-                            <a class='signup-link' href='<?php echo ROOT_URL; ?>users/register'>Signup</a>                    
+                        <form class='login-form' action='' method='POST'>
+                            <input type='text' name='username' placeholder='Username...'>
+                            <input type='password' name='password' placeholder='Password...'>
+                            <button class='nav-button' type='submit' name='login-submit'>Log in</button>
+                        </form>
+                        <a class='signup-link' href='<?php echo ROOT_URL; ?>users/register'>Signup</a>                    
                 <?php else : ?>
-                    <form class='logout-form' action='<?php echo ROOT_URL; ?>users/logout'>
-                        <span><?php echo $_SESSION['username']; ?></span>
+                    <form class='logout-form' action=''>
                         <button class='nav-button' type='submit' name='logout-submit'>Logout</button>
                     </form>
                 <?php endif ?>                 

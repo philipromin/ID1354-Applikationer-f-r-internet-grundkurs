@@ -12,10 +12,7 @@ class Users extends Controller {
     }
 
     protected function logout() {
-        session_start();
-        session_unset();
-        session_destroy();
-
-        header('Location: '.ROOT_URL);
+        $viewmodel = new UserModel();
+        $viewmodel->logout();
     }
 }

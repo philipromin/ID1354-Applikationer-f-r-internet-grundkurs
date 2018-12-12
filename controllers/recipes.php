@@ -20,4 +20,9 @@ class Recipes extends Controller {
         $viewmodel = new RecipeModel();
         $viewmodel->deleteComment();
     }
+
+    protected function showComments(){
+        $viewmodel = new RecipeModel();
+        $viewmodel->showComments();
+    }
 }
